@@ -29,4 +29,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 var port = app.Configuration["PORT"] ?? "8080";
-app.Run($"http://localhost:{port}");
+app.Run($"http://0.0.0.0:{port}");
