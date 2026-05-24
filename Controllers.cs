@@ -78,48 +78,11 @@ public class HealthController : ControllerBase
     }
 
     /// <summary>
-    /// API documentation endpoint
+    /// API documentation endpoint - redirects to Swagger UI
     /// </summary>
     [HttpGet("/")]
     public IActionResult Root()
     {
-        return Ok(new
-        {
-            name = "Productivity Optimizer API",
-            version = "1.0.0",
-            description = "Weather-powered productivity optimization for Azure App Services",
-            endpoints = new
-            {
-                productivityRecommendation = new
-                {
-                    method = "GET",
-                    path = "/api/productivity/recommend",
-                    parameters = new
-                    {
-                        energyLevel = "low|medium|high",
-                        taskType = "focus|creativity|energy",
-                        limit = "number (default: 3)"
-                    }
-                },
-                focusScoreCalculation = new
-                {
-                    method = "POST",
-                    path = "/api/focus-score/calculate",
-                    requestBody = new
-                    {
-                        temperature = "number (°C)",
-                        humidity = "number (0-100)",
-                        cloudCover = "number (0-100)",
-                        isRaining = "boolean",
-                        dayOfWeek = "string (Monday-Sunday)"
-                    }
-                },
-                health = new
-                {
-                    method = "GET",
-                    path = "/health"
-                }
-            }
-        });
+        return Redirect("/swagger");
     }
 }

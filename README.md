@@ -1,6 +1,6 @@
 # Productivity Optimizer API (.NET)
 
-A creative, weather-powered REST API built with ASP.NET Core 8, optimized for Azure App Services deployment.
+A creative, weather-powered REST API built with ASP.NET Core 10, optimized for Azure App Services deployment.
 
 ## Features
 
@@ -23,7 +23,7 @@ A creative, weather-powered REST API built with ASP.NET Core 8, optimized for Az
 
 ## Prerequisites
 
-- .NET 8 SDK or later
+- .NET 10 SDK or later
 - Visual Studio 2022, VS Code, or any .NET-compatible IDE
 
 ## Quick Start
